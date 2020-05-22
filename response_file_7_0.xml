@@ -33,10 +33,10 @@
     </com.izforge.izpack.panels.LocaleChooserPanel>
     <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
         <userInput>
-            <entry key="SERVER_PORT" value="9999"/>
-            <entry key="SERVER_ODBC_PORT" value="9996"/>
-            <entry key="SERVER_FACTORY_PORT" value="9997"/>
-            <entry key="SERVER_SHUTDOWNPORT" value="9998"/>
+            <entry key="SERVER_PORT" value="19999"/>
+            <entry key="SERVER_ODBC_PORT" value="19996"/>
+            <entry key="SERVER_FACTORY_PORT" value="19997"/>
+            <entry key="SERVER_SHUTDOWNPORT" value="19998"/>
         </userInput>
     </com.izforge.izpack.panels.UserInputPanel>
     <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
@@ -52,10 +52,10 @@
     </com.izforge.izpack.panels.UserInputPanel>
     <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
         <userInput>
-            <entry key="WC_HTTP_PORT" value="9090"/>
-            <entry key="WC_SHUTDOWN_PORT" value="9099"/>
-            <entry key="WC_JMX_PORT" value="9098"/>
-            <entry key="WC_AUX_JMX_PORT" value="9097"/>
+            <entry key="WC_HTTP_PORT" value="19090"/>
+            <entry key="WC_SHUTDOWN_PORT" value="19099"/>
+            <entry key="WC_JMX_PORT" value="19098"/>
+            <entry key="WC_AUX_JMX_PORT" value="19097"/>
         </userInput>
     </com.izforge.izpack.panels.UserInputPanel>
     <com.izforge.izpack.panels.SummaryPanel id="UNKNOWN (com.izforge.izpack.panels.SummaryPanel)"/>
