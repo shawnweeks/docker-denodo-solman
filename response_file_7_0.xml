@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutomatedInstallation langpack="eng">
+    <com.izforge.izpack.panels.HelloPanel id="UNKNOWN (com.izforge.izpack.panels.HelloPanel)"/>
+    <com.izforge.izpack.panels.LicencePanel id="UNKNOWN (com.izforge.izpack.panels.LicencePanel)"/>
+    <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
+        <userInput>
+            <entry key="LICENSE_FILE" value=""/>
+            <entry key="SETUP_TYPE" value="custom"/>
+            <entry key="INSTALL_PATH" value="/opt/denodo"/>
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.DenodoTreePacksPanel id="UNKNOWN (com.izforge.izpack.panels.DenodoTreePacksPanel)">
+        <pack name="Common" selected="true"/>
+        <pack name="VirtualDataPort" selected="true"/>
+        <pack name="vdpadmintool" selected="false"/>
+        <pack name="vdpserver" selected="true"/>
+        <pack name="diagnosticmonitoringtool" selected="false"/>
+        <pack name="SolutionManager" selected="true"/>
+        <pack name="solutionmanagerserver" selected="true"/>
+        <pack name="licensemanagerserver" selected="true"/>
+        <pack name="solutionmanagerwebtool" selected="true"/>
+        <pack name="webpanel" selected="true"/>
+        <pack name="webpanelwebtool" selected="true"/>
+    </com.izforge.izpack.panels.DenodoTreePacksPanel>
+    <com.izforge.izpack.panels.InstallValidatorPanel id="UNKNOWN (com.izforge.izpack.panels.InstallValidatorPanel)">
+        <entry key="SELECTED_MODULES_VDP" value="VirtualDataPort,vdpserver,"/>
+        <entry key="SELECTED_MODULES_SOLUTIONMANAGER" value="SolutionManager,solutionmanagerserver,licensemanagerserver,solutionmanagerwebtool,"/>
+        <entry key="SELECTED_MODULES_WEBPANEL" value="webpanel,webpanelwebtool,"/>
+        <entry key="SELECTED_MODULES_COMMON" value="Common,"/>
+    </com.izforge.izpack.panels.InstallValidatorPanel>
+    <com.izforge.izpack.panels.LocaleChooserPanel id="UNKNOWN (com.izforge.izpack.panels.LocaleChooserPanel)">
+        <entry key="SELECTED_LOCALE" value="us_utc_iso"/>
+    </com.izforge.izpack.panels.LocaleChooserPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
+        <userInput>
+            <entry key="SERVER_PORT" value="9999"/>
+            <entry key="SERVER_ODBC_PORT" value="9996"/>
+            <entry key="SERVER_FACTORY_PORT" value="9997"/>
+            <entry key="SERVER_SHUTDOWNPORT" value="9998"/>
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
+        <userInput>
+            <entry key="SOLUTIONMANAGER_PORT" value="10090"/>
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
+        <userInput>
+            <entry key="LICENSEMANAGER_PORT" value="10091"/>
+            <entry key="DERBY_PORT" value="11526"/>
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.UserInputPanel id="UNKNOWN (com.izforge.izpack.panels.UserInputPanel)">
+        <userInput>
+            <entry key="WC_HTTP_PORT" value="9090"/>
+            <entry key="WC_SHUTDOWN_PORT" value="9099"/>
+            <entry key="WC_JMX_PORT" value="9098"/>
+            <entry key="WC_AUX_JMX_PORT" value="9097"/>
+        </userInput>
+    </com.izforge.izpack.panels.UserInputPanel>
+    <com.izforge.izpack.panels.SummaryPanel id="UNKNOWN (com.izforge.izpack.panels.SummaryPanel)"/>
+    <com.izforge.izpack.panels.InstallPanel id="UNKNOWN (com.izforge.izpack.panels.InstallPanel)"/>
+    <com.izforge.izpack.panels.ShortcutPanel id="UNKNOWN (com.izforge.izpack.panels.ShortcutPanel)"/>
+    <com.izforge.izpack.panels.SimpleFinishPanel id="UNKNOWN (com.izforge.izpack.panels.SimpleFinishPanel)"/>
+</AutomatedInstallation>
