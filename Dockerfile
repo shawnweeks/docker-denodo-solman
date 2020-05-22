@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-slim-buster as stage
 
 ENV DENODO_INSTALL_FILE denodo-install-solutionmanager-7.0.zip
-ENV DENODO_UPDATE_JAR denodo-solutionmanager-v70-update-202003102200.jar
+ENV DENODO_UPDATE_JAR denodo-solutionmanager-v70-update.jar
 ENV DENODO_RESPONSE_FILE response_file_7_0.xml
 ENV DENODO_HOME /opt/denodo
 
@@ -18,6 +18,9 @@ RUN apt-get update && \
     /tmp/denodo-install-solutionmanager-7.0/installer_cli.sh install --autoinstaller /tmp/response_file_7_0.xml
 
 COPY [ "entrypoint.sh", "configure.sh", "${DENODO_HOME}/" ]
+
+# Custom Version of server.xml to support SSL Enablement at runtime.
+COPY [ "tomcat-server.xml", "${DENODO_HOME}/resources/apache-tomcat/conf/server.xml" ]
 
 RUN chmod 755 ${DENODO_HOME}/*.sh
 
@@ -57,10 +60,11 @@ VOLUME ${DENODO_HOME}/lib/solution-manager-extensions
 # Auxiliary port            19997
 # Shutdown port             19998
 # SolMan Administration Tool
-# Web container port        19090
+# HTTP Web container port   19090
+# HTTPS Web container port  19443
 # Shutdown port             19099
 # JMX port                  19098
 # Auxiliary JMX port        19097
-EXPOSE 10090 10091 19999 19996 19997 19998 19090 19099 19098 19099
+EXPOSE 10090 10091 19999 19996 19997 19998 19443 19090 19099 19098 19099
 
 ENTRYPOINT [ "./entrypoint.sh" ]
